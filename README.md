@@ -91,7 +91,7 @@ ping -c 4 ubuntu.com
 
 **Result:** Ubuntu installation and internet connectivity successful.
 
-![Ubuntu Installation](screenshots/01-ubuntu-installation.png)
+![Ubuntu Installation](screenshots/ubuntu installation.png)
 
 ### Step 2: Identify Initial Network Issue
 
