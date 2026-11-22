@@ -259,6 +259,35 @@ exit
 **Lesson Learned:** Devices require appropriate network configuration to communicate, and SSH provides encrypted remote administration.
 
 ---
+## Network Configuration Summary
+
+| Parameter | Kali Linux | Ubuntu |
+|---|---|---|
+| Role | Security Workstation | Target Machine |
+| Network Mode | NAT Network | NAT Network |
+| Network Name | CyberLab | CyberLab |
+| IP Address | 192.168.77.3 | 192.168.77.4 |
+| Network Interface | eth0 | enp0s3 |
+| Subnet Mask | 255.255.255.0 | 255.255.255.0 |
+| Network Prefix | /24 | /24 |
+| SSH Role | Client | Server |
+| SSH Port | TCP 22 | TCP 22 |
+
+### Network Verification Commands
+
+```bash
+ip -4 addr
+ip route
+```
+
+### Connectivity Verification
+
+```bash
+ping -c 4 192.168.77.4
+ssh capstone@192.168.77.4
+```
+
+**Results:** Ping successful (0% packet loss); SSH login successful.
 
 ## 6. Contribution to the TechCrush Capstone
 
